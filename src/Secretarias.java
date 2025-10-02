@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Secretaria {
+public class Secretarias {
     private String cadastrar;
     private String atualizar;
     private String remover;

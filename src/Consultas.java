@@ -1,10 +1,10 @@
-public class Consulta {
+public class Consultas {
     private String data;
     private String horario;
     private String medico;
     private Paciente paciente;
 
-    public Consulta(String data, String horario, String medico, Paciente paciente) {
+    public Consultas(String data, String horario, String medico, Paciente paciente) {
         this.data = data;
         this.horario = horario;
         this.medico = medico;

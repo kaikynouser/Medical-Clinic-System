@@ -1,4 +1,4 @@
-public class Paciente {
+public class Pacientes {
     private String nome;
     private String dataNascimento;
     private String endereco;
@@ -11,7 +11,7 @@ public class Paciente {
     private String cirurgia;
     private String alergia;
 
-    public Paciente(String nome, String dataNascimento, String endereco, int numeroCelular,
+    public Pacientes(String nome, String dataNascimento, String endereco, int numeroCelular,
                     String convenio, Boolean fuma, Boolean bebe, Boolean diabete, Boolean doencaCardiaca, String cirurgia, String alergia) {
 
         this.nome = nome;
