@@ -11,7 +11,8 @@ public class Consultas {
     public enum typo { NORMAL, RETORNO;}
     private typo tipoConsulta;
 
-
+    // metodo para calcular o tipo de consulta, se é consulta normal retorna horario 1h
+    // se não retorna horario 30m
     public LocalDateTime calcularTipo (){
         if (tipoConsulta == typo.NORMAL) return horario.plusHours(1);
         else return horario.plusMinutes(30);

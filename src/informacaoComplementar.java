@@ -1,4 +1,5 @@
 public class informacaoComplementar {
+    private Pacientes paciente;
     private Boolean fuma;
     private Boolean bebe;
     private Boolean diabete;
@@ -6,14 +7,7 @@ public class informacaoComplementar {
     private String cirurgia;
     private String alergia;
 
-    public informacaoComplementar(Boolean fuma, Boolean bebe, Boolean diabete, Boolean doencaCardiaca, String cirurgia, String alergia) {
-        this.fuma = fuma;
-        this.bebe = bebe;
-        this.diabete = diabete;
-        this.doencaCardiaca = doencaCardiaca;
-        this.cirurgia = cirurgia;
-        this.alergia = alergia;
-    }
+
 
     public Boolean getFuma() {
         return fuma;
