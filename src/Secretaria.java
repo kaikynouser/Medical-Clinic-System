@@ -1,5 +1,4 @@
-import java.util.Scanner;
-public class Secretarias {
+public class Secretaria {
     private String cadastrar;
     private String atualizar;
     private String remover;

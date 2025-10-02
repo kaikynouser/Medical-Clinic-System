@@ -2,13 +2,13 @@ public class Consultas {
     private String data;
     private String horario;
     private String medico;
-    private Paciente paciente;
+    private Pacientes pacientes;
 
-    public Consultas(String data, String horario, String medico, Paciente paciente) {
+    public Consultas(String data, String horario, String medico, Pacientes paciente) {
         this.data = data;
         this.horario = horario;
         this.medico = medico;
-        this.paciente = paciente;
+        this.pacientes = paciente;
     }
 
     public String getData() {
@@ -35,12 +35,12 @@ public class Consultas {
         this.medico = medico;
     }
 
-    public Paciente getPaciente() {
-        return paciente;
+    public Pacientes getPaciente() {
+        return pacientes;
     }
 
-    public void setPaciente(Paciente paciente) {
-        this.paciente = paciente;
+    public void setPaciente(Pacientes paciente) {
+        this.pacientes = paciente;
     }
 }
 
