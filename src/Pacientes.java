@@ -8,7 +8,7 @@ public class Pacientes {
     private String convenio;
 
     //TIPOS CONVENIO
-    public enum tiposConvenios { PARTICULAS, PLANO_DE_SAUDE; }
+    public enum tiposConvenios { PARTICULARES, PLANO_DE_SAUDE; }
 
     public Pacientes(String nome, String dataNascimento, String endereco, int numeroCelular, String convenio) {
         this.nome = nome;
