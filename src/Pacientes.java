@@ -1,9 +1,14 @@
 public class Pacientes {
+
+    //INFO PACIENTES
     private String nome;
     private String dataNascimento;
     private String endereco;
     private int numeroCelular;
     private String convenio;
+
+    //TIPOS CONVENIO
+    public enum tiposConvenios { PARTICULAS, PLANO_DE_SAUDE; }
 
     public Pacientes(String nome, String dataNascimento, String endereco, int numeroCelular, String convenio) {
         this.nome = nome;
@@ -51,6 +56,17 @@ public class Pacientes {
 
     public void setConvenio(String convenio) {
         this.convenio = convenio;
+    }
+
+    @Override
+    public String toString() {
+        return "Pacientes{" +
+                "nome='" + nome + '\'' +
+                ", dataNascimento='" + dataNascimento + '\'' +
+                ", endereco='" + endereco + '\'' +
+                ", numeroCelular=" + numeroCelular +
+                ", convenio='" + convenio + '\'' +
+                '}';
     }
 }
 
