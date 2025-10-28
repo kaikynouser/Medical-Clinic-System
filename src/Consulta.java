@@ -1,8 +1,8 @@
 import java.time.LocalDateTime;
 
-public class Consultas {
+public class Consulta {
     // INFO CONSULTAS
-    private String data;
+    private LocalDateTime data;
     private LocalDateTime horario;
     private Doutor medico;
     private Pacientes pacientes;
@@ -18,7 +18,7 @@ public class Consultas {
         else return horario.plusMinutes(30);
     }
 
-    public Consultas(String data, LocalDateTime horario, Doutor medico, Pacientes pacientes, typo tipoConsulta) {
+    public Consulta(LocalDateTime data, LocalDateTime horario, Doutor medico, Pacientes pacientes, typo tipoConsulta) {
         this.data = data;
         this.horario = horario;
         this.medico = medico;
@@ -26,14 +26,13 @@ public class Consultas {
         this.tipoConsulta = tipoConsulta;
     }
 
-    public String getData() {
+    public LocalDateTime getData() {
         return data;
     }
 
-    public void setData(String data) {
+    public void setData(LocalDateTime data) {
         this.data = data;
     }
-
 
     public LocalDateTime getHorario() {
         return horario;
@@ -41,14 +40,6 @@ public class Consultas {
 
     public void setHorario(LocalDateTime horario) {
         this.horario = horario;
-    }
-
-    public Pacientes getPaciente() {
-        return pacientes;
-    }
-
-    public void setPaciente(Pacientes paciente) {
-        this.pacientes = paciente;
     }
 
     public Doutor getMedico() {
@@ -73,6 +64,17 @@ public class Consultas {
 
     public void setTipoConsulta(typo tipoConsulta) {
         this.tipoConsulta = tipoConsulta;
+    }
+
+    @Override
+    public String toString() {
+        return "Consulta{" +
+                "data=" + data +
+                ", horario=" + horario +
+                ", medico=" + medico +
+                ", pacientes=" + pacientes +
+                ", tipoConsulta=" + tipoConsulta +
+                '}';
     }
 }
 

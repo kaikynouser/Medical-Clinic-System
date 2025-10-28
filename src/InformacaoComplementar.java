@@ -1,5 +1,4 @@
-public class informacaoComplementar {
-    private Pacientes paciente;
+public class InformacaoComplementar {
     private Boolean fuma;
     private Boolean bebe;
     private Boolean diabete;
@@ -7,7 +6,16 @@ public class informacaoComplementar {
     private String cirurgia;
     private String alergia;
 
+    public InformacaoComplementar() {}
 
+    public InformacaoComplementar(Boolean fuma, Boolean bebe, Boolean diabete, Boolean doencaCardiaca, String cirurgia, String alergia) {
+        this.fuma = fuma;
+        this.bebe = bebe;
+        this.diabete = diabete;
+        this.doencaCardiaca = doencaCardiaca;
+        this.cirurgia = cirurgia;
+        this.alergia = alergia;
+    }
 
     public Boolean getFuma() {
         return fuma;
@@ -55,5 +63,17 @@ public class informacaoComplementar {
 
     public void setAlergia(String alergia) {
         this.alergia = alergia;
+    }
+
+    @Override
+    public String toString() {
+        return "InformacaoComplementar{" +
+                "fuma=" + fuma +
+                ", bebe=" + bebe +
+                ", diabete=" + diabete +
+                ", doencaCardiaca=" + doencaCardiaca +
+                ", cirurgia='" + cirurgia + '\'' +
+                ", alergia='" + alergia + '\'' +
+                '}';
     }
 }
